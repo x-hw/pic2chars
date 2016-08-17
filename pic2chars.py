@@ -8,12 +8,12 @@ parser.add_argument('file', help='the picture to convert')
 parser.add_argument('-o', '--output', help="the filename to output, default 'output.txt' ")
 parser.add_argument('-w', '--width', type=int, help='the width of output file')
 parser.add_argument('-ht', '--height', type=int, help='the height of output file')
-
 args = parser.parse_args()
 
-#you can change chars(black to white):
-#chars = list("@@WW##$$XXoo**""==::''..--  ")
-chars = list("01. ")
+# You can add another str to change chars(left to right, black to white):
+str1 = "@@WW##$$XXoo**""==::''..--  "
+str2 = "01. "
+chars = list(str2)
 
 def get_char(r, b, g, alpha = 256):
     if alpha == 0:
