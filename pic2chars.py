@@ -11,6 +11,7 @@ parser.add_argument('-ht', '--height', type=int, help='the height of output file
 
 args = parser.parse_args()
 
+#you can change chars(black to white):
 #chars = list("@@WW##$$XXoo**""==::''..--  ")
 chars = list("01. ")
 
